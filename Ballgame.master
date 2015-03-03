@@ -8,6 +8,7 @@
     <asp:ContentPlaceHolder id="headPlaceHolder" runat="server">
     </asp:ContentPlaceHolder>
 </head>
+
 <body>
     <form id="form1" runat="server">
         <header>
@@ -19,7 +20,12 @@
         <asp:ContentPlaceHolder id="formPlaceHolder" runat="server">        
         </asp:ContentPlaceHolder>
     </section>
+        
+        <footer>
+            <p>Please contact us at 88-BallGame or email us at 
+            <asp:HyperLink ID="hlEmail" runat="server" 
+                NavigateUrl="mailto: info@ballgame.com">info@ballgame.com</asp:HyperLink></p> 
+        </footer>
     </form>
-
 </body>
 </html>
