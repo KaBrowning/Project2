@@ -16,6 +16,8 @@
             <h2>"Managing Ballgames with Technology"</h2>
         </header>
 
+        <asp:Menu ID="mNavigation" runat="server"></asp:Menu>
+
     <section>
         <asp:ContentPlaceHolder id="formPlaceHolder" runat="server">        
         </asp:ContentPlaceHolder>
@@ -24,7 +26,7 @@
         <footer>
             <p>Please contact us at 88-BallGame or email us at 
             <asp:HyperLink ID="hlEmail" runat="server" 
-                NavigateUrl="mailto: info@ballgame.com">info@ballgame.com</asp:HyperLink></p> 
+                NavigateUrl="mailto:info@ballgame.com">info@ballgame.com</asp:HyperLink></p> 
         </footer>
     </form>
 </body>
