@@ -16,7 +16,8 @@
             <h2>"Managing Ballgames with Technology"</h2>
         </header>
 
-        <asp:Menu ID="mNavigation" runat="server"></asp:Menu>
+        <asp:Menu ID="mNavigation" runat="server" DataSourceID="smsBallgameSiteMap"></asp:Menu>
+        <asp:SiteMapDataSource ID="smsBallgameSiteMap" runat="server" />
 
     <section>
         <asp:ContentPlaceHolder id="formPlaceHolder" runat="server">        
