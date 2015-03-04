@@ -60,8 +60,9 @@
     
             <br/>
             <br/>
-            <asp:Button ID="btnAddToContacts" runat="server" Text="Add to Contacts"/>
-            <asp:Button ID="btnViewList" runat="server" Text="View Contact List"/>
+            <asp:Button ID="btnAddToContacts" runat="server" Text="Add to Contacts" OnClick="btnAddToContacts_Click"/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:Button ID="btnViewList" runat="server" Text="View Contact List" OnClick="btnViewList_Click"/>
             <br/>
             <br/>
             <asp:Label ID="lblSuccessfulAdd" runat="server" CssClass="label"></asp:Label>

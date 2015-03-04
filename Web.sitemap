@@ -10,7 +10,7 @@
     
     <siteMapNode url="" title="Administration"  description="" >
       <siteMapNode url="~/CustomerList.aspx" title="Display Customers" description="" />
-      <siteMapNode url="" title="Display Contacts" description="" />
+      <siteMapNode url="~/ContactList.aspx" title="Display Contacts" description="" />
     </siteMapNode>
 
     <siteMapNode url="" title="Site Map" description="" ></siteMapNode>
