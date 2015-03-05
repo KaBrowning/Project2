@@ -11,11 +11,11 @@
     <asp:SqlDataSource ID="sdsCustomersAdded" runat="server" ConnectionString="<%$ ConnectionStrings:CustomerConnectionString %>" ProviderName="<%$ ConnectionStrings:CustomerConnectionString.ProviderName %>" SelectCommand="SELECT [Name], [Phone], [Email] FROM [Customer] ORDER BY [Name]"></asp:SqlDataSource>
     <br/>
     <br/>
-    <asp:Button ID="btnSelectMore" runat="server" Text="Select Additional Customers"/>
+    <asp:Button ID="btnSelectMore" runat="server" Text="Select Additional Customers" OnClick="btnSelectMore_Click"/>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <asp:Button ID="btnRemove" runat="server" Text="Remove Customer"/>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <asp:Button ID="btnClear" runat="server" Text="Clear List"/>
+    <asp:Button ID="btnClear" runat="server" Text="Clear List" OnClick="btnClear_Click"/>
 </asp:Content>
 
 

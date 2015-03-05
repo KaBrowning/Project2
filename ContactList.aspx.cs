@@ -15,4 +15,8 @@ public partial class ContactList : System.Web.UI.Page
     {
         Session.Remove("Customer");
     }
+    protected void btnSelectMore_Click(object sender, EventArgs e)
+    {
+        Response.Redirect("~/CustomerList.aspx");
+    }
 }
