@@ -11,4 +11,8 @@ public partial class ContactList : System.Web.UI.Page
     {
 
     }
+    protected void btnClear_Click(object sender, EventArgs e)
+    {
+        Session.Remove("Customer");
+    }
 }
