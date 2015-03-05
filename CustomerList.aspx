@@ -1,12 +1,15 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Ballgame.master" AutoEventWireup="true" CodeFile="CustomerList.aspx.cs" Inherits="CustomerList" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="headPlaceHolder" Runat="Server">
+    <title>Customer List</title>
+    <link href="Styles/BallgameStyle.css" rel="stylesheet"/>
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="formPlaceHolder" Runat="Server">
      <h3>Please select a customer to view their information</h3>
     <asp:DropDownList ID="ddlCustomers" runat="server" AutoPostBack="True" DataSourceID="sdsCustomerList" 
         DataTextField="Name" AppendDataBoundItems="True" DataValueField="CustomerID"></asp:DropDownList>
+    <br/>
 
     <asp:SqlDataSource ID="sdsCustomerList" runat="server" ConnectionString="<%$ ConnectionStrings:CustomerConnectionString %>" 
         ProviderName="<%$ ConnectionStrings:CustomerConnectionString.ProviderName %>" 

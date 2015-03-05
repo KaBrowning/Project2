@@ -7,14 +7,19 @@ using System.Web.UI.WebControls;
 
 public partial class CustomerList : System.Web.UI.Page
 {
+    private App_Code.CustomerList _custList;
+
     protected void Page_Load(object sender, EventArgs e)
     {
-
+        if (!IsPostBack)
+        {
+            this._custList = (App_Code.CustomerList) Session["Customer"];
+        }
     }
 
     protected void btnAddToContacts_Click(object sender, EventArgs e)
     {
-
+        
     }
 
     /// <summary>
